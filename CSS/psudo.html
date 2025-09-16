@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        h2{
+            color: red;
+            background-color: aqua;
+        }
+
+
+
+        h2:hover{
+            color: aqua;
+            background-color: red;
+        }
+
+
+        p{
+            color: rgb(33, 14, 240);
+            background-color: gray;
+            font-size: large;
+        }
+
+        p::first-letter{
+            font-size: xx-large;
+        }
+
+        p:active{
+            color:gray ;
+            background-color: rgb(33, 14, 240);
+        }
+
+        .a::before{
+            content: "-->";
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>psudo selectors</h1>
+
+
+    <h2>Psudo Class Selector</h2>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, excepturi.</p>
+
+    1. psudo class (:)  <br>
+    2. psudo element (::)
+
+
+    <ul type="none">
+
+        <li class="a">apple</li>
+        <li class="b">apple</li>
+        <li class="c">apple</li>
+        <li class="a">apple</li>
+        <li>banana</li>
+        <li class="a">Grapes</li>
+        <li>car</li>
+        <li>bus</li>
+
+    </ul>
+
+
+
+
+</body>
+</html>

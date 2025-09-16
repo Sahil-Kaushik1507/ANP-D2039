@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr  1fr ;
+            gap: 5px;
+            
+            border: 2px solid black;
+
+            justify-items: center;
+            align-items: center;
+        }
+
+        .colspan{
+                border: 2px solid black;
+                grid-column: 2/4;
+        }
+
+        .rowspan{
+            grid-row:2/4;
+        }
+
+
+        .child{
+            border: 2px solid black;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h1>grid</h1>
+
+
+    <div class="grid">
+        <p class="child">Lorem, ipsum dolor.\</p>
+
+        <span class="colspan">hello</span>
+
+        <h4 class="child rowspan">heading</h4>
+
+        <section class="child">abc</section>
+        <section class="child">abc</section>
+        <section class="child">abc</section>
+        <section class="child">abc</section>
+        <section class="child">abc</section>
+        <section class="child">abc</section>
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>
