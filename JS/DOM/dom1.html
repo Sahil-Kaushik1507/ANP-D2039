@@ -1,0 +1,88 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+
+        <style>
+
+            h1{
+                color:red;
+            }
+
+.myclass{
+    font-size: large;
+}
+
+            .myclass2{
+                background-color: aqua;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>DOM </h1>
+        <div class="classname">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, molestiae?</p>
+
+            <span id="myid" >Lorem ipsum dolor sit amet.</span>
+
+        </div>
+
+        <h1>heading1</h1>
+
+        <div class="classname">
+            <p>Lorem, ipsum.</p>
+        </div>
+
+
+        <p class=" myclass">hiii i am a para <span style="display: none;"> i am a span </span>  para ending</p>
+
+        <!-- <script>
+          let tag = document.getElementsByTagName('h1')
+           let class1 = document.getElementsByClassName('classname')
+           let id1= document.getElementById('myid')
+
+
+            let query =   document.querySelector('#myid')
+           let query1=document.querySelectorAll('.classname');
+
+           console.log(tag);
+           console.log(class1);
+           console.log(id1);
+           console.log(query);
+           console.log(query1);
+
+            id1.innerText = "new text"
+
+           console.log(id1.innerText)
+    
+
+            tag[1].style="color: green "
+
+
+        </script> -->
+
+
+        <script>
+
+            let element = document.querySelector('.myclass')
+
+
+            // element.innerText ="New Text"
+
+            console.log(element.innerText) 
+            console.log(element.innerHTML) 
+            console.log(element.textContent) 
+
+            element.style="color:green";
+            
+            element.classList="myclass myclass2"
+
+            element.id = "myid2"
+
+            element.setAttribute('height', '100px')
+
+        </script>
+    </body>
+</html>

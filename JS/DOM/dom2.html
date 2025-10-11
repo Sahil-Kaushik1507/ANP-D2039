@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="myclass1">
+
+        <h1> heading1</h1>
+
+        <div class="myclass2">
+            <p id="myid1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, officia.</p>
+            <input type="text">
+            <button>check</button>
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+            const newElement = document.createElement('p');
+            newElement.innerText ="new p tag by JS"
+            newElement.style = "color:red";
+
+        //    const parent= document.getElementsByClassName('myclass2')[0]
+           const parent= document.querySelector('.myclass2')
+           const input = document.querySelector('input')
+
+        //    parent.before(newElement)
+
+        //    parent.insertBefore(newElement,input)
+
+        //    parent.removeChild(newElemen
+
+
+           const delet = document.querySelector('#myid1');
+
+           const btn = document.querySelector('button')
+
+           delet.remove()
+
+
+           let check=false;
+
+           btn.addEventListener('click',()=>{
+
+            if(!check){
+                parent.appendChild(newElement)
+                check=true;
+            }else{
+                newElement.remove();
+                check=false
+            }
+
+           } )
+
+
+
+
+    </script>
+</body>
+</html>
