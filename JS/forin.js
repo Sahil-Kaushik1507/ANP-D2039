@@ -2,8 +2,14 @@
 let myobj ={
     name:"sahil",
     age:35,
-    gender:"M"
+    gender:"M",
+
+  fun : function(){
+    console.log("hello")
+  }
 }
+
+
 
 // for(i=0;Object.keys(obj).length,i++){
 //     let key = Object.keys(obj)[i]

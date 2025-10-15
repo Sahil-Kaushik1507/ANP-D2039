@@ -7,7 +7,7 @@
 // console.log(c)
 
 // let d= 10;
-// let e = 20
+// let e = 20add
 // let f = a+b;
 // console.log(f)
 
@@ -53,6 +53,8 @@
 
 // let myfun2=(a,b)=>(a+b)
 // myfun2(12,55);
+
+// a => console.log("hello")
 
 
 // function (a){

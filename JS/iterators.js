@@ -2,14 +2,15 @@
 
 //for each
 
-// let arr = [11,12,13,14,15,16,17,18]
+let arr = [11,12,13,14,15,16,17,18]
 
-// let res= arr.forEach((element, index, arr)=>{
+let res= arr.forEach((element, index, arr)=>{
 
-//     return element*2;
-// })
+    return element*2;
+})
 
-// console.log(res)
+console.log(res)
+
 
 // 22,24,26,28,30....36
 
@@ -59,7 +60,7 @@
 
 // filter 
 
-let arr = [11,12,13,14,15,16,17,18]
+// let arr = [11,12,13,14,15,16,17,18]
 
 // let res= arr.filter(function(value, index, arr){
 //     console.log(value,index,arr)
@@ -93,5 +94,5 @@ console.log(sum)
 
 // },0)
 
-let res = cart.reduce((prev,curr)=>prev+curr,100)
+// let res = cart.reduce((prev,curr)=>prev+curr,100)
 console.log(res)
