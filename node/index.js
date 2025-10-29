@@ -43,7 +43,7 @@ let path1 = path.join(__dirname,"data","logadata","log.txt")
     } )
     }
 
-    if(req.url =='/'){
+    if(req.url =='/' && req.method=="GET"){
         res.end("Home Page")
     }else if (req.url=='/about'){
         res.end("About page")
